@@ -1,7 +1,7 @@
 Automated build for Oracle Database
 -----------------------------------
 
-1. Install oracle-rdbms-server-11gR2-preinstall
+1. Install oracle-rdbms-server-12cR1-preinstall
 2. Create grid user and groups
 
 
