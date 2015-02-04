@@ -1,10 +1,10 @@
 package {"oracle-rdbms-server-12cR1-preinstall":
-  ensure  => installed,
+  ensure  => latest,
   allow_virtual => false,
 }
 
 package {"openssh":
-  ensure => installed,
+  ensure => latest,
   allow_virtual => false,
 }
 
