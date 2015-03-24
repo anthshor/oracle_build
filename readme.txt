@@ -5,6 +5,14 @@ Automated build for Oracle Database
 2. Install DB software
 3. Run DBCA
 
+NB Requires software directory (not included) with Oracle binaries already downloaded and contained within it:
+ Anthonys-Mac-mini:oracle_build anthonyshorter$ ls
+ Vagrantfile		db_install.rsp		provision.sh		software
+ cfgrsp.properties	hosts			readme.txt
+ Anthonys-Mac-mini:oracle_build anthonyshorter$ cd software/
+ Anthonys-Mac-mini:software anthonyshorter$ ls
+ linuxamd64_12c_database_1of2.zip	linuxamd64_12c_database_2of2.zip
+
 Output
 ------
 Log in as oracle:
