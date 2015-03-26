@@ -40,6 +40,6 @@ FRED	  READ WRITE
 
 Acknowledgements:
 -----------------
-1. kikitux https://github.com/kikitux base box, kikitux/oracle6, and using /usr/bin/[ for idempotence tests in provision.sh
+1. kikitux https://github.com/kikitux for base box, kikitux/oracle65-1disk, and using /usr/bin/[ for idempotence tests in provision.sh
 2. http://www.cyberciti.biz/open-source/command-line-hacks/linux-run-command-as-different-user/
-3. Many in provision.sh
+3. Comments in provision.sh
