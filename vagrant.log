@@ -1,8 +1,8 @@
 Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Importing base box 'kikitux/oracle65-1disk'...
-[KProgress: 10%[KProgress: 20%[KProgress: 40%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+[KProgress: 10%[KProgress: 20%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
 ==> default: Checking if box 'kikitux/oracle65-1disk' is up to date...
-==> default: Setting the name of the VM: oracle_build_default_1427274800459_14074
+==> default: Setting the name of the VM: oracle_build_default_1427356763047_19448
 ==> default: Clearing any previously set network interfaces...
 ==> default: Preparing network interfaces based on configuration...
     default: Adapter 1: nat
@@ -26,7 +26,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Mounting shared folders...
     default: /vagrant => /Users/anthonyshorter/vagrant/oracle_build
 ==> default: Running provisioner: shell...
-    default: Running: /var/folders/qv/m3gzvwfs7tx0knx3f0yj7svw0000gn/T/vagrant-shell20150325-2705-1lk5eit.sh
+    default: Running: /var/folders/qv/m3gzvwfs7tx0knx3f0yj7svw0000gn/T/vagrant-shell20150326-1856-1t7rf7f.sh
 ==> default: Loaded plugins: security
 ==> default: Setting up Install Process
 ==> default: Resolving Dependencies
@@ -382,158 +382,6 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:   keyutils-libs.x86_64 0:1.4-5.el6          libX11.x86_64 0:1.6.0-2.2.el6       
 ==> default:   libX11-common.noarch 0:1.6.0-2.2.el6      libgcc.x86_64 0:4.4.7-11.el6        
 ==> default:   libgomp.x86_64 0:4.4.7-11.el6             libstdc++.x86_64 0:4.4.7-11.el6     
-==> default: Complete!
-==> default: Loaded plugins: security
-==> default: Setting up Install Process
-==> default: Resolving Dependencies
-==> default: --> Running transaction check
-==> default: ---> Package openssh.x86_64 0:5.3p1-94.el6 will be updated
-==> default: --> Processing Dependency: openssh = 5.3p1-94.el6 for package: openssh-server-5.3p1-94.el6.x86_64
-==> default: --> Processing Dependency: openssh = 5.3p1-94.el6 for package: openssh-clients-5.3p1-94.el6.x86_64
-==> default: ---> Package openssh.x86_64 0:5.3p1-104.el6_6.1 will be an update
-==> default: --> Running transaction check
-==> default: ---> Package openssh-clients.x86_64 0:5.3p1-94.el6 will be updated
-==> default: ---> Package openssh-clients.x86_64 0:5.3p1-104.el6_6.1 will be an update
-==> default: ---> Package openssh-server.x86_64 0:5.3p1-94.el6 will be updated
-==> default: ---> Package openssh-server.x86_64 0:5.3p1-104.el6_6.1 will be an update
-==> default: --> Finished Dependency Resolution
-==> default: 
-==> default: Dependencies Resolved
-==> default: 
-==> default: ================================================================================
-==> default:  Package            Arch      Version                Repository            Size
-==> default: ================================================================================
-==> default: Updating:
-==> default:  openssh            x86_64    5.3p1-104.el6_6.1      public_ol6_latest    271 k
-==> default: Updating for dependencies:
-==> default:  openssh-clients    x86_64    5.3p1-104.el6_6.1      public_ol6_latest    436 k
-==> default:  openssh-server     x86_64    5.3p1-104.el6_6.1      public_ol6_latest    320 k
-==> default: 
-==> default: Transaction Summary
-==> default: ================================================================================
-==> default: Upgrade       3 Package(s)
-==> default: Total download size: 1.0 M
-==> default: Downloading Packages:
-==> default: --------------------------------------------------------------------------------
-==> default: Total                                           175 kB/s | 1.0 MB     00:05     
-==> default: Running rpm_check_debug
-==> default: Running Transaction Test
-==> default: Transaction Test Succeeded
-==> default: Running Transaction
-==> default:   Updating   : openssh-5.3p1-104.el6_6.1.x86_64                             1/6
-==> default:  
-==> default:   Updating   : openssh-server-5.3p1-104.el6_6.1.x86_64                      2/6
-==> default:  
-==> default:   Updating   : openssh-clients-5.3p1-104.el6_6.1.x86_64                     3/6
-==> default:  
-==> default:   Cleanup    : openssh-clients-5.3p1-94.el6.x86_64                          4/6
-==> default:  
-==> default:   Cleanup    : openssh-server-5.3p1-94.el6.x86_64                           5/6
-==> default:  
-==> default:   Cleanup    : openssh-5.3p1-94.el6.x86_64                                  6/6
-==> default:  
-==> default:   Verifying  : openssh-server-5.3p1-104.el6_6.1.x86_64                      1/6
-==> default:  
-==> default:   Verifying  : openssh-5.3p1-104.el6_6.1.x86_64                             2/6
-==> default:  
-==> default:   Verifying  : openssh-clients-5.3p1-104.el6_6.1.x86_64                     3/6
-==> default:  
-==> default:   Verifying  : openssh-5.3p1-94.el6.x86_64                                  4/6
-==> default:  
-==> default:   Verifying  : openssh-server-5.3p1-94.el6.x86_64                           5/6
-==> default:  
-==> default:   Verifying  : openssh-clients-5.3p1-94.el6.x86_64                          6/6
-==> default:  
-==> default: 
-==> default: Updated:
-==> default:   openssh.x86_64 0:5.3p1-104.el6_6.1                                            
-==> default: 
-==> default: Dependency Updated:
-==> default:   openssh-clients.x86_64 0:5.3p1-104.el6_6.1                                    
-==> default:   openssh-server.x86_64 0:5.3p1-104.el6_6.1                                     
-==> default: Complete!
-==> default: Loaded plugins: security
-==> default: Setting up Install Process
-==> default: Resolving Dependencies
-==> default: --> Running transaction check
-==> default: ---> Package glibc.x86_64 0:2.12-1.132.el6 will be updated
-==> default: --> Processing Dependency: glibc = 2.12-1.132.el6 for package: glibc-headers-2.12-1.132.el6.x86_64
-==> default: --> Processing Dependency: glibc = 2.12-1.132.el6 for package: glibc-common-2.12-1.132.el6.x86_64
-==> default: --> Processing Dependency: glibc = 2.12-1.132.el6 for package: glibc-devel-2.12-1.132.el6.x86_64
-==> default: ---> Package glibc.x86_64 0:2.12-1.149.el6_6.5 will be an update
-==> default: --> Running transaction check
-==> default: ---> Package glibc-common.x86_64 0:2.12-1.132.el6 will be updated
-==> default: ---> Package glibc-common.x86_64 0:2.12-1.149.el6_6.5 will be an update
-==> default: ---> Package glibc-devel.x86_64 0:2.12-1.132.el6 will be updated
-==> default: ---> Package glibc-devel.x86_64 0:2.12-1.149.el6_6.5 will be an update
-==> default: ---> Package glibc-headers.x86_64 0:2.12-1.132.el6 will be updated
-==> default: ---> Package glibc-headers.x86_64 0:2.12-1.149.el6_6.5 will be an update
-==> default: --> Finished Dependency Resolution
-==> default: 
-==> default: Dependencies Resolved
-==> default: 
-==> default: ================================================================================
-==> default:  Package          Arch      Version                  Repository            Size
-==> default: ================================================================================
-==> default: Updating:
-==> default:  glibc            x86_64    2.12-1.149.el6_6.5       public_ol6_latest    3.8 M
-==> default: Updating for dependencies:
-==> default:  glibc-common     x86_64    2.12-1.149.el6_6.5       public_ol6_latest     14 M
-==> default:  glibc-devel      x86_64    2.12-1.149.el6_6.5       public_ol6_latest    983 k
-==> default:  glibc-headers    x86_64    2.12-1.149.el6_6.5       public_ol6_latest    611 k
-==> default: 
-==> default: Transaction Summary
-==> default: ================================================================================
-==> default: Upgrade       4 Package(s)
-==> default: 
-==> default: Total download size: 20 M
-==> default: Downloading Packages:
-==> default: --------------------------------------------------------------------------------
-==> default: Total                                           1.1 MB/s |  20 MB     00:18     
-==> default: Running rpm_check_debug
-==> default: Running Transaction Test
-==> default: Transaction Test Succeeded
-==> default: Running Transaction
-==> default:   Updating   : glibc-2.12-1.149.el6_6.5.x86_64                              1/8
-==> default:  
-==> default:   Updating   : glibc-common-2.12-1.149.el6_6.5.x86_64                       2/8
-==> default:  
-==> default:   Updating   : glibc-headers-2.12-1.149.el6_6.5.x86_64                      3/8
-==> default:  
-==> default:   Updating   : glibc-devel-2.12-1.149.el6_6.5.x86_64                        4/8
-==> default:  
-==> default:   Cleanup    : glibc-devel-2.12-1.132.el6.x86_64                            5/8
-==> default:  
-==> default:   Cleanup    : glibc-headers-2.12-1.132.el6.x86_64                          6/8
-==> default:  
-==> default:   Cleanup    : glibc-2.12-1.132.el6.x86_64                                  7/8
-==> default:  
-==> default:   Cleanup    : glibc-common-2.12-1.132.el6.x86_64                           8/8
-==> default:  
-==> default:   Verifying  : glibc-common-2.12-1.149.el6_6.5.x86_64                       1/8
-==> default:  
-==> default:   Verifying  : glibc-devel-2.12-1.149.el6_6.5.x86_64                        2/8
-==> default:  
-==> default:   Verifying  : glibc-headers-2.12-1.149.el6_6.5.x86_64                      3/8
-==> default:  
-==> default:   Verifying  : glibc-2.12-1.149.el6_6.5.x86_64                              4/8
-==> default:  
-==> default:   Verifying  : glibc-2.12-1.132.el6.x86_64                                  5/8
-==> default:  
-==> default:   Verifying  : glibc-devel-2.12-1.132.el6.x86_64                            6/8
-==> default:  
-==> default:   Verifying  : glibc-common-2.12-1.132.el6.x86_64                           7/8
-==> default:  
-==> default:   Verifying  : glibc-headers-2.12-1.132.el6.x86_64                          8/8
-==> default:  
-==> default: 
-==> default: Updated:
-==> default:   glibc.x86_64 0:2.12-1.149.el6_6.5                                             
-==> default: 
-==> default: Dependency Updated:
-==> default:   glibc-common.x86_64 0:2.12-1.149.el6_6.5                                      
-==> default:   glibc-devel.x86_64 0:2.12-1.149.el6_6.5                                       
-==> default:   glibc-headers.x86_64 0:2.12-1.149.el6_6.5                                     
 ==> default: Complete!
 ==> default: Archive:  /vagrant/software/linuxamd64_12c_database_1of2.zip
 ==> default:    creating: database/
@@ -1980,13 +1828,9 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup9.jar  
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup7.jar  
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup10.jar  
-==> default: 
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup1.jar  
-==> default: 
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup6.jar  
-==> default: 
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup11.jar  
-==> default: 
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup8.jar  
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup5.jar  
 ==> default:   inflating: database/stage/Components/oracle.install.deinstalltool/12.1.0.1.0/1/DataFiles/filegroup2.jar  
@@ -2018,13 +1862,16 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.23.1.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.7.1.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.15.1.jar  
+==> default: 
 ==> default:   inflating: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.19.1.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.22.1.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.6.1.jar  
+==> default: 
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.16.1.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.5.1.jar  
 ==> default:   inflating: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.21.1.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.9.1.jar  
+==> default: 
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.17.1.jar  
 ==> default:   inflating: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.4.1.jar  
@@ -2039,6 +1886,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:   inflating: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.26.1.jar  
 ==> default:   inflating: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.12.1.jar  
 ==> default:   inflating: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup4.jar  
+==> default: 
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.1.1.jar  
 ==> default:   inflating: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup3.jar  
 ==> default:  extracting: database/stage/Components/oracle.precomp.rsf/12.1.0.1.0/1/DataFiles/filegroup1.13.1.jar  
@@ -2048,6 +1896,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:    creating: database/stage/Components/oracle.nlsrtl.rsf.core/12.1.0.1.0/1/
 ==> default:    creating: database/stage/Components/oracle.nlsrtl.rsf.core/12.1.0.1.0/1/DataFiles/
 ==> default:   inflating: database/stage/Components/oracle.nlsrtl.rsf.core/12.1.0.1.0/1/DataFiles/filegroup2.jar  
+==> default: 
 ==> default:   inflating: database/stage/Components/oracle.nlsrtl.rsf.core/12.1.0.1.0/1/DataFiles/filegroup3.jar  
 ==> default:   inflating: database/stage/Components/oracle.nlsrtl.rsf.core/12.1.0.1.0/1/DataFiles/filegroup1.jar  
 ==> default:    creating: database/stage/Components/oracle.options/
@@ -2468,8 +2317,10 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/checksyslog.sh  
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/checktmpfs.sh  
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/check_network_param.sh  
+==> default: 
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/hangchecktimer.sh  
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/mus_check.sh  
+==> default: 
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/check_default_gateway.sh  
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/getASMDiskInfo.sh  
 ==> default:   inflating: database/stage/cvu/cv/remenv/pluggable/check_rp_filter.sh  
@@ -2535,12 +2386,13 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:   inflating: database/stage/globalvariables/globalvar.xml  
 ==> default:   inflating: database/stage/globalvariables/variable.properties  
 ==> default:   inflating: database/runInstaller   
-==> default: 
 ==> default:    creating: database/install/
 ==> default:    creating: database/install/resource/
 ==> default:   inflating: database/install/resource/cons.nls  
 ==> default:   inflating: database/install/resource/cons_ko.nls  
+==> default: 
 ==> default:   inflating: database/install/resource/cons_fr.nls  
+==> default: 
 ==> default:   inflating: database/install/resource/cons_ja.nls  
 ==> default:   inflating: database/install/resource/cons_pt_BR.nls  
 ==> default:   inflating: database/install/resource/cons_de.nls  
@@ -2656,6 +2508,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:   inflating: database/stage/Components/oracle.rdbms/12.1.0.1.0/1/DataFiles/filegroup30.jar  
 ==> default:   inflating: database/stage/Components/oracle.rdbms/12.1.0.1.0/1/DataFiles/filegroup19.25.1.jar  
 ==> default:   inflating: database/stage/Components/oracle.rdbms/12.1.0.1.0/1/DataFiles/filegroup37.jar  
+==> default: 
 ==> default:    creating: database/stage/Components/oracle.rdbms/12.1.0.1.0/1/DataFiles/Expanded/
 ==> default:    creating: database/stage/Components/oracle.rdbms/12.1.0.1.0/1/DataFiles/Expanded/filegroup15/
 ==> default:   inflating: database/stage/Components/oracle.rdbms/12.1.0.1.0/1/DataFiles/Expanded/filegroup15/README_rdbms.htm  
@@ -2760,16 +2613,18 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default:   inflating: database/stage/Components/oracle.rdbms/12.1.0.1.0/1/DataFiles/filegroup19.6.1.jar  
 ==> default: Starting Oracle Universal Installer...
 ==> default: 
-==> default: Checking Temp space: must be greater than 500 MB.   Actual 23765 MB    Passed
+==> default: Checking Temp space: must be greater than 500 MB.   Actual 24081 MB    Passed
 ==> default: Checking swap space: must be greater than 150 MB.   Actual 5999 MB    Passed
-==> default: Preparing to launch Oracle Universal Installer from /tmp/OraInstall2015-03-25_09-17-57AM. Please wait ...
+==> default: Preparing to launch Oracle Universal Installer from /tmp/OraInstall2015-03-26_08-03-14AM. Please wait ...
 ==> default: [
-==> default: WARNING] - My Oracle Support Username/Email Address Not Specified
+==> default: WARNING
+==> default: ] - 
+==> default: My Oracle Support Username/Email Address Not Specified
 ==> default: [WARNING] [INS-30011] The ADMIN password entered does not conform to the Oracle recommended standards.
 ==> default:    CAUSE: Oracle recommends that the password entered should be at least 8 characters in length, contain at least 1 uppercase character, 1 lower case character and 1 digit [0-9].
 ==> default:    ACTION: Provide a password that conforms to the Oracle recommended standards.
 ==> default: You can find the log of this install session at:
-==> default:  /u01/app/oraInventory/logs/installActions2015-03-25_09-17-57AM.log
+==> default:  /u01/app/oraInventory/logs/installActions2015-03-26_08-03-14AM.log
 ==> default: Prepare in progress.
 ==> default: .
 ==> default: .
@@ -2780,7 +2635,29 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: .
 ==> default: .
 ==> default: .
-==> default: .........................................   9% Done.
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: ...................   9% Done.
 ==> default: 
 ==> default: Prepare successful.
 ==> default: Copy files in progress.
@@ -2846,16 +2723,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: ..........
 ==> default: ..........
 ==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default:    26% Done.
+==> default: .........   26% Done.
 ==> default: ..........
 ==> default: ..........
 ==> default: ..........
@@ -2882,16 +2750,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: ..........
 ==> default: ..........
 ==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default:    41% Done.
+==> default: .........   41% Done.
 ==> default: ..........
 ==> default: ..........
 ==> default: ..........
@@ -2902,82 +2761,20 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: ..........
 ==> default: ..........
 ==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default:    51% Done.
+==> default: .........   51% Done.
 ==> default: ..........
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: ........................   59% Done.
+==> default: ................................
+==> default: ........   59% Done.
 ==> default: ..........
 ==> default: ..........
 ==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default:    64% Done.
+==> default: .............................   64% Done.
 ==> default: ..........
 ==> default: ..........
 ==> default: ..........
 ==> default: ..........
 ==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default: .
-==> default:    69% Done.
+==> default: .........   69% Done.
 ==> default: ..........
 ==> default: ..........
 ==> default: ..........
@@ -2999,6 +2796,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Copy files successful.
 ==> default: Link binaries in progress.
 ==> default: ..........
+==> default: 
 ==> default: Link binaries successful.
 ==> default: Setup files in progress.
 ==> default: ..........
@@ -3025,7 +2823,24 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: .
 ==> default: .
 ==> default: .
-==> default: .................   79% Done.
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default:    79% Done.
 ==> default: ..........
 ==> default: ..........
 ==> default: Setup files successful.
@@ -3033,14 +2848,13 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: 
 ==> default: Setup Inventory successful.
 ==> default: ..................................................   84% Done.
+==> default: 
 ==> default: Finish Setup in progress.
 ==> default: ..................................................   89% Done.
 ==> default: 
 ==> default: Finish Setup successful.
 ==> default: The installation of Oracle Database 12c was successful.
-==> default: 
-==> default: Please check '/u01/app/oraInventory/logs/silentInstall2015-03-25_09-17-57AM.log' for more details.
-==> default: 
+==> default: Please check '/u01/app/oraInventory/logs/silentInstall2015-03-26_08-03-14AM.log' for more details.
 ==> default: Prepare for configuration steps in progress.
 ==> default: 
 ==> default: Prepare for configuration steps successful.
@@ -3064,285 +2878,285 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Removing read,write,execute permissions for world.
 ==> default: Changing groupname of /u01/app/oraInventory to oinstall.
 ==> default: The execution of the script is complete.
-==> default: Check /u01/app/oracle/product/12c/install/root_vagrant-oracle65_2015-03-25_09-23-37.log for the output of root script
+==> default: Check /u01/app/oracle/product/12c/install/root_vagrant-oracle65_2015-03-26_08-08-59.log for the output of root script
 ==> default: Setting the invPtrLoc to /u01/app/oracle/product/12c/oraInst.loc
 ==> default: 
 ==> default: perform - mode is starting for action: configure
-==> default: Mar 25, 2015 9:23:39 AM oracle.install.config.common.NetCAInternalPlugIn invoke
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.config.common.NetCAInternalPlugIn invoke
 ==> default: INFO: NetCAInternalPlugIn: ... adding </ouiinternal>
-==> default: Mar 25, 2015 9:23:39 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
 ==> default: INFO: Executing NETCA
-==> default: Mar 25, 2015 9:23:39 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
 ==> default: INFO: Command /u01/app/oracle/product/12c/bin/netca /orahome /u01/app/oracle/product/12c /orahnam OraDB12Home1 /instype typical /inscomp client,oraclenet,javavm,server,ano /insprtcl tcp /cfg local /authadp NO_VALUE /responseFile /u01/app/oracle/product/12c/network/install/netca_typ.rsp /silent  /silent   /ouiinternal 
-==> default: Mar 25, 2015 9:23:40 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn.handleProcess() entered.
-==> default: Mar 25, 2015 9:23:40 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn: getting configAssistantParmas.
-==> default: Mar 25, 2015 9:23:40 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn: checking secretArguments.
-==> default: Mar 25, 2015 9:23:40 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: No arguments to pass to stdin
-==> default: Mar 25, 2015 9:23:40 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:02 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn: starting read loop.
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: End of argument passing to stdin
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Parsing command line arguments:
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Parsing command line arguments:
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "orahome" = /u01/app/oracle/product/12c
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "orahome" = /u01/app/oracle/product/12c
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "orahnam" = OraDB12Home1
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "orahnam" = OraDB12Home1
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "instype" = typical
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "instype" = typical
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "inscomp" = client,oraclenet,javavm,server,ano
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "inscomp" = client,oraclenet,javavm,server,ano
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "insprtcl" = tcp
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "insprtcl" = tcp
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "cfg" = local
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "cfg" = local
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "authadp" = NO_VALUE
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "authadp" = NO_VALUE
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "responsefile" = /u01/app/oracle/product/12c/network/install/netca_typ.rsp
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "responsefile" = /u01/app/oracle/product/12c/network/install/netca_typ.rsp
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "silent" = true
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "silent" = true
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "silent" = true
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "silent" = true
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Parameter "ouiinternal" = true
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Parameter "ouiinternal" = true
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Done parsing command line arguments.
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Done parsing command line arguments.
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Oracle Net Services Configuration:
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Oracle Net Services Configuration:
-==> default: Mar 25, 2015 9:23:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Profile configuration complete.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Profile configuration complete.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Oracle Net Listener Startup:
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Oracle Net Listener Startup:
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Running Listener Control: 
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Running Listener Control: 
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:       /u01/app/oracle/product/12c/bin/lsnrctl start LISTENER
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:       /u01/app/oracle/product/12c/bin/lsnrctl start LISTENER
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Listener Control complete.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Listener Control complete.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read:     Listener started successfully.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line:     Listener started successfully.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Listener configuration complete.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Listener configuration complete.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Oracle Net Services configuration successful. The exit code is 0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Oracle Net Services configuration successful. The exit code is 0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Exceeded the number of arguments passed to stdin. CurrentCount:1 Total args:0
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
 ==> default: INFO: Executing DBCA
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn invoke
 ==> default: INFO: Command /u01/app/oracle/product/12c/bin/dbca  -silent -createDatabase -templateName General_Purpose.dbc -sid fred -gdbName fred -emConfiguration DBEXPRESS -storageType FS -datafileDestination /u01/oradata -datafileJarLocation /u01/app/oracle/product/12c/assistants/dbca/templates -responseFile /vagrant/db_install.rsp -characterset AL32UTF8 -obfuscatedPasswords false -sampleSchema true -automaticMemoryManagement true -totalMemory 758 -maskPasswords false    -oui_internal 
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn.handleProcess() entered.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn: getting configAssistantParmas.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn: checking secretArguments.
-==> default: Mar 25, 2015 9:23:44 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:08 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: ... GenericInternalPlugIn: starting read loop.
-==> default: Mar 25, 2015 9:23:46 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:10 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: SYS_PASSWORD_PROMPT
-==> default: Mar 25, 2015 9:23:46 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:10 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Processing: SYS_PASSWORD_PROMPT for argument tag -sysPassword
-==> default: Mar 25, 2015 9:23:46 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:10 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: SYSTEM_PASSWORD_PROMPT
-==> default: Mar 25, 2015 9:23:46 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:10 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Processing: SYSTEM_PASSWORD_PROMPT for argument tag -systemPassword
-==> default: Mar 25, 2015 9:24:05 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:27 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Copying database files
-==> default: Mar 25, 2015 9:24:05 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:27 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Copying database files
-==> default: Mar 25, 2015 9:24:05 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:27 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 1% complete
-==> default: Mar 25, 2015 9:24:05 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:27 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 1% complete
-==> default: Mar 25, 2015 9:24:20 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 3% complete
-==> default: Mar 25, 2015 9:24:20 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 3% complete
-==> default: Mar 25, 2015 9:24:20 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 11% complete
-==> default: Mar 25, 2015 9:24:20 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 11% complete
-==> default: Mar 25, 2015 9:24:30 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:53 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 18% complete
-==> default: Mar 25, 2015 9:24:30 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:09:53 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 18% complete
-==> default: Mar 25, 2015 9:25:10 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:10:33 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 26% complete
-==> default: Mar 25, 2015 9:25:10 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:10:33 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 26% complete
-==> default: Mar 25, 2015 9:26:00 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 33% complete
-==> default: Mar 25, 2015 9:26:00 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:43 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 33% complete
-==> default: Mar 25, 2015 9:26:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 37% complete
-==> default: Mar 25, 2015 9:26:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 37% complete
-==> default: Mar 25, 2015 9:26:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Creating and starting Oracle instance
-==> default: Mar 25, 2015 9:26:06 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Creating and starting Oracle instance
-==> default: Mar 25, 2015 9:26:16 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:56 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 40% complete
-==> default: Mar 25, 2015 9:26:16 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:11:56 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 40% complete
-==> default: Mar 25, 2015 9:26:29 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:12:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 45% complete
-==> default: Mar 25, 2015 9:26:29 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:12:07 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 45% complete
-==> default: Mar 25, 2015 9:31:01 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:16:50 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 50% complete
-==> default: Mar 25, 2015 9:31:01 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:16:50 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 50% complete
-==> default: Mar 25, 2015 9:35:35 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:31 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 55% complete
-==> default: Mar 25, 2015 9:35:35 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:31 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 55% complete
-==> default: Mar 25, 2015 9:35:37 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:33 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 60% complete
-==> default: Mar 25, 2015 9:35:37 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:33 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 60% complete
-==> default: Mar 25, 2015 9:35:50 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 61% complete
-==> default: Mar 25, 2015 9:35:50 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 61% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 62% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 62% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 65% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 65% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Completing Database Creation
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Completing Database Creation
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 69% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 69% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 73% complete
-==> default: Mar 25, 2015 9:35:52 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 73% complete
-==> default: Mar 25, 2015 9:35:53 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:55 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 76% complete
-==> default: Mar 25, 2015 9:35:53 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:21:55 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 76% complete
-==> default: Mar 25, 2015 9:36:16 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:22:16 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 88% complete
-==> default: Mar 25, 2015 9:36:16 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:22:16 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 88% complete
-==> default: Mar 25, 2015 9:37:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:23:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 91% complete
-==> default: Mar 25, 2015 9:37:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:23:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 91% complete
-==> default: Mar 25, 2015 9:37:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:23:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: 100% complete
-==> default: Mar 25, 2015 9:37:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:23:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: 100% complete
-==> default: Mar 25, 2015 9:37:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:23:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: INFO: Read: Look at the log file "/u01/app/oracle/cfgtoollogs/dbca/fred/fred.log" for further details.
-==> default: Mar 25, 2015 9:37:54 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
+==> default: Mar 26, 2015 8:23:45 AM oracle.install.driver.oui.config.GenericInternalPlugIn handleProcess
 ==> default: WARNING: Skipping line: Look at the log file "/u01/app/oracle/cfgtoollogs/dbca/fred/fred.log" for further details.
 ==> default: 
 ==> default: perform - mode finished for action: configure
 ==> default: 
-==> default: You can see the log file: /u01/app/oracle/product/12c/cfgtoollogs/oui/configActions2015-03-25_09-23-39-AM.log
+==> default: You can see the log file: /u01/app/oracle/product/12c/cfgtoollogs/oui/configActions2015-03-26_08-09-02-AM.log
