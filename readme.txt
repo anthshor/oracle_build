@@ -37,3 +37,9 @@ NAME	  OPEN_MODE
 --------- --------------------
 FRED	  READ WRITE
 
+
+Acknowledgements:
+-----------------
+1. kikitux https://github.com/kikitux for using /usr/bin/[ for idempotence tests in provision.sh
+2. http://www.cyberciti.biz/open-source/command-line-hacks/linux-run-command-as-different-user/
+3. Many in provision.sh
