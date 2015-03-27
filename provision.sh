@@ -1,16 +1,21 @@
 # v0.1 Initial
 # v0.2 Adding conditions to each statement for idempotence.
-#    
 
 
 # PreInstall requirements
 # Install software
 # Referred to Oracle Install Guide 3.6 Installing Oracle Linux with Public Yum repo
 # http://docs.oracle.com/database/121/LADBI/olinrpm.htm#LADBI7480
+# thanks Alvaro https://github.com/kikitux/stagefiles/blob/master/db/preinstall_crs_db.sh#L1
+ 
+echo "installing oracle-rdbms-server-12cR1-preinstall" 
+PACKAGES="oracle-rdbms-server-12cR1-preinstall openssh glibc" 
 
-[ -e /etc/security/limits.d/oracle-rdbms-server-12cR1-preinstall.conf ] || yum install -y oracle-rdbms-server-12cR1-preinstall
-[ `rpm -q openssh | grep 'not installed' | wc -l` -eq 0 ] || yum install -y openssh
-[ `rpm -q glibc | grep 'not installed' | wc -l` -eq 0 ] || yum install -y glibc
+rpm -q $PACKAGES 
+if [ $? -ne 0 ]; then 
+  yum clean all 
+  yum -y install $PACKAGES  
+fi
 
 
 # Unpack previously downloaded software
