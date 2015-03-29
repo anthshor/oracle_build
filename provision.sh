@@ -9,7 +9,7 @@
 # thanks Alvaro https://github.com/kikitux/stagefiles/blob/master/db/preinstall_crs_db.sh#L1
  
 echo "installing oracle-rdbms-server-12cR1-preinstall" 
-PACKAGES="oracle-rdbms-server-12cR1-preinstall openssh glibc" 
+PACKAGES="oracle-rdbms-server-12cR1-preinstall openssh glibc git" 
 
 rpm -q $PACKAGES 
 if [ $? -ne 0 ]; then 
@@ -37,11 +37,13 @@ fi
 # Cause: Unable to determine local host name using Java network functions.
 # Action: Ensure that hostname is defined correctly using the 'hostname' command.
 
-if [ `grep oracle6 /etc/hosts | wc -l` -gt 0 ]; then
+if [ `grep $hostname  /etc/hosts | wc -l` -gt 0 ]; then
     echo "Skipping modifying hosts file, hostname present"
   else
     mv /etc/hosts /etc/hosts.original
     cp /vagrant/hosts /etc/hosts
+    #cp /etc/hosts /etc/hosts.original
+    #sed ' 1 s/.*/& {hostname -s}/' /etc/hosts
 fi
 
 
@@ -102,3 +104,63 @@ if [ `cat /proc/meminfo | grep MemTotal | awk '{print $2}'` -gt 1000000 ]; then
   else
     echo "Skipping database creation, not enough memory"
 fi
+
+
+##############################################################
+#
+# 4. Node-oracledb installation on Linux with a Local Database
+#
+# Ref : https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#instoh
+#
+##############################################################
+
+# Install node.js
+
+rpm -q nodejs
+if [ $? -ne 0 ]; then
+  curl -sL https://rpm.nodesource.com/setup | bash -
+  yum install -y nodejs
+fi
+
+
+# Install the driver for Oracle/node.js
+
+su - oracle -c '[ -d node-oracledb ] || git clone https://github.com/oracle/node-oracledb'
+cd /home/oracle/node-oracledb/; export ORACLE_HOME=/u01/app/oracle/product/12c; npm install -g
+
+
+# Setup test
+
+if [ -e /home/oracle/node-oracledb/examples/dbconfig.js ] && [ `grep fred /home/oracle/node-oracledb/examples/dbconfig.js | wc -l` -gt 0 ]; then
+  echo "Skipping copy of dbconfig,js, already copied"
+else
+  if [ -e /home/oracle/node-oracledb/examples/dbconfig.js ]; then  cp /home/oracle/node-oracledb/examples/dbconfig.js /home/oracle/node-oracledb/examples/dbconfig.js.orig; fi
+  cp /vagrant/dbconfig.js /home/oracle/node-oracledb/examples/
+  chmod 644 /home/oracle/node-oracledb/examples/dbconfig.js
+  chown oracle:oinstall /home/oracle/node-oracledb/examples/dbconfig.js
+fi
+
+
+# Run test as Oracle
+
+su - oracle -c 'export NODE_PATH=/usr/lib/node_modules 
+export LD_LIBRARY_PATH=/u01/app/oracle/product/12c/lib
+export ORACLE_SID=fred
+export ORACLE_BASE=/u01/app/oracle
+export ORACLE_HOME=/u01/app/oracle/product/12c
+export PATH=${PATH}:${ORACLE_HOME}/bin
+
+sqlplus / as sysdba << EOF
+alter user hr account unlock;
+alter user hr identified by hr;
+exit
+
+EOF
+
+node node-oracledb/examples/select1.js'
+if [ $? -ne 0 ]; then
+  echo "Something went wrong. Node.js test FAILED"
+else
+  echo "node.js test Succeeded!"
+fi
+
