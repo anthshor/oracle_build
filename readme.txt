@@ -1,9 +1,12 @@
-Automated build for an Oracle Database
---------------------------------------
+Automated build for an Oracle Database with node.js
+---------------------------------------------------
 
 1. Install oracle-rdbms-server-12cR1-preinstall
 2. Install DB software
 3. Run DBCA
+4. Install node.js 
+4.1 Install driver for Oracle
+4.2 Test with an example select
 
 Requires software directory with Oracle binaries already downloaded and contained within it:
   $ cd software/
@@ -16,30 +19,10 @@ Run
 ---
 $ vagrant up
 $ vagrant ssh
-[vagrant@vagrant-oracle65 ~]$ sudo su - oracle
-[oracle@vagrant-oracle65 ~]$ . oraenv
-ORACLE_SID = [oracle] ? fred
-The Oracle base has been set to /u01/app/oracle
-[oracle@vagrant-oracle65 ~]$ sqlplus / as sysdba
+.
+. < lines removed>
+.
+==> default: [ [ 180, 'Construction' ] ]
+==> default: [ { name: 'DEPARTMENT_ID' }, { name: 'DEPARTMENT_NAME' } ]
+==> default: node.js test Succeeded!
 
-SQL*Plus: Release 12.1.0.1.0 Production on Wed Mar 25 09:39:23 2015
-
-Copyright (c) 1982, 2013, Oracle.  All rights reserved.
-
-
-Connected to:
-Oracle Database 12c Enterprise Edition Release 12.1.0.1.0 - 64bit Production
-With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
-
-SQL> select name,open_mode from v$database;
-
-NAME	  OPEN_MODE
---------- --------------------
-FRED	  READ WRITE
-
-
-Acknowledgements:
------------------
-1. kikitux https://github.com/kikitux for base box, kikitux/oracle65-1disk, and using /usr/bin/[ for idempotence tests in provision.sh
-2. http://www.cyberciti.biz/open-source/command-line-hacks/linux-run-command-as-different-user/
-3. Comments in provision.sh
