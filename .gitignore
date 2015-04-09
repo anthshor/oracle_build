@@ -1,0 +1,6 @@
+proxy.env
+software/*zip
+software/*rpm
+software/*tgz
+software/*gz
+.Vagrant/
