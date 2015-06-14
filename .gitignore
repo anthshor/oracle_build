@@ -4,3 +4,5 @@ software/*rpm
 software/*tgz
 software/*gz
 .Vagrant/
+OMT/
+proxy.env.old

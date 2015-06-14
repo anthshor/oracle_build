@@ -428,7 +428,7 @@ SECURITY_UPDATES_VIA_MYORACLESUPPORT=false
 #
 # Example    : DECLINE_SECURITY_UPDATES=false
 #------------------------------------------------------------------------------
-DECLINE_SECURITY_UPDATES=false
+DECLINE_SECURITY_UPDATES=true
 
 #------------------------------------------------------------------------------
 # Specify the Proxy server name. Length should be greater than zero.
@@ -480,7 +480,7 @@ COLLECTOR_SUPPORTHUB_URL=
 #   - OFFLINE_UPDATES
 #   - SKIP_UPDATES
 #------------------------------------------------------------------------------
-oracle.installer.autoupdates.option=
+oracle.installer.autoupdates.option=SKIP_UPDATES
 
 #------------------------------------------------------------------------------
 # In case MYORACLESUPPORT_DOWNLOAD option is chosen, specify the location where

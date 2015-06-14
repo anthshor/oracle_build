@@ -1,6 +1,9 @@
 # v0.1 Initial
 # v0.2 Adding conditions to each statement for idempotence.
+# v0.3 Added proxy 
 
+# Proxy
+[ -f /vagrant/proxy.env ] && source /vagrant/proxy.env
 
 # PreInstall requirements
 # Install software
@@ -23,8 +26,8 @@ fi
 if [ -d /home/oracle/database ]; then
     echo "Skipping unzipping..."
   else
-    su - oracle -c 'unzip /vagrant/software/linuxamd64_12c_database_1of2.zip'
-    su - oracle -c 'unzip /vagrant/software/linuxamd64_12c_database_2of2.zip'
+    su - oracle -c 'unzip /u01/software/linuxamd64_12c_database_1of2.zip'
+    su - oracle -c 'unzip /u01/software/linuxamd64_12c_database_2of2.zip'
 fi
 
 
@@ -37,13 +40,17 @@ fi
 # Cause: Unable to determine local host name using Java network functions.
 # Action: Ensure that hostname is defined correctly using the 'hostname' command.
 
-if [ `grep $hostname  /etc/hosts | wc -l` -gt 0 ]; then
+if [ `grep -i $hostname /etc/hosts | wc -l` -ne 0 ]; then
     echo "Skipping modifying hosts file, hostname present"
-  else
-    mv /etc/hosts /etc/hosts.original
-    cp /vagrant/hosts /etc/hosts
-    #cp /etc/hosts /etc/hosts.original
-    #sed ' 1 s/.*/& {hostname -s}/' /etc/hosts
+else
+    long="`hostname`"
+    short="`hostname -s`"
+    echo "updating /etc/hosts with $HOSTNAME information"
+    if [ "$short" == "$long" ]; then
+        echo "127.0.0.1 localhost.localdomain localhost $short" > /etc/hosts
+    else
+        echo "127.0.0.1 localhost.localdomain localhost $long $short" > /etc/hosts
+    fi
 fi
 
 
