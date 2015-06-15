@@ -6,3 +6,4 @@ software/*gz
 .Vagrant/
 OMT/
 proxy.env.old
+.DS_Store
