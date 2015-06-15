@@ -1,11 +1,14 @@
-# v0.1 Initial
-# v0.2 Adding conditions to each statement for idempotence.
-# v0.3 Added proxy 
+#!/bin/bash
+# Changelog
+# 20150615
 # v0.4 sudo -u oracle -E so it inherits variables from parent process. 
 #      Alvaros code to configure /dev/shm to 95% of VMs memory. 
 #      variables ORACLE_HOME,STAGE, BASEDIR
 #      unzip -n for software instead of if statement
 #      distill down, remove uneccessary code - combine similar tests
+# v0.3 Added proxy
+# v0.2 Adding conditions to each statement for idempotence.
+# v0.1 Initial
 
 # Proxy
 [ -f /vagrant/proxy.env ] && source /vagrant/proxy.env
